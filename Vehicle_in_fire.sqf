@@ -20,8 +20,6 @@ params
     ["_time_to_burn_osnova",[60,90,120]]
 ];
 
-t_t_b_o = _time_to_burn_osnova;
-
 _arry_type_vehilce = [];
 
 if(_car_burn isEqualTo true)then{_arry_type_vehilce append ["Car","Motorcycle"]};
@@ -93,7 +91,7 @@ while {STOP_burning_vehicle_car} do {
                 _light setLightAttenuation [0,0,0,2];
                 _light setLightDayLight true;
                 // time to destroid
-                _time_to_destroid = random t_t_b_o;
+                _time_to_destroid = random _time_to_burn_osnova;
                 // talk about vehicle in fine
                 [[], {
                     hint(parseText "<t color='#ff0000'><t size='2.0'>Машина горит!!!</t></t>");
