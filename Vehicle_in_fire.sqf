@@ -122,6 +122,7 @@ while {STOP_burning_vehicle_car} do {
                 deleteVehicle _Smoke;
                 deleteVehicle _light;
                 vehicle_on_fire = vehicle_on_fire - [_vehicle_select];
+                [_vehicle_select,10 ] call BIS_fnc_holdActionRemove;
             }
         }
     } forEach _vehicle;
