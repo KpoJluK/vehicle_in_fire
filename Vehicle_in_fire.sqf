@@ -51,7 +51,7 @@ while {STOP_burning_vehicle_car} do {
                     {},													// Code executed when action starts
                     {},													// Code executed on every progress tick
                     {   
-                        (_this select 0) setHitPointDamage ["hitEngine", 0.9];
+                        (_this select 0) setHitPointDamage ["hitEngine", 0.7];
                         [[], {[ (_this select 0),0 ] call BIS_fnc_holdActionRemove;}] remoteExec ["call",0];
                     },				// Code executed on completion
                     {},													// Code executed on interrupted
