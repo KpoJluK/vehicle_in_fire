@@ -48,8 +48,8 @@ while {STOP_burning_vehicle_car} do {
                             _vehicle_action_id = [
                                 _vehicle_select,											// Object the action is attached to
                                 "Потушить машину",										// Title of the action
-                                "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",	// Idle icon shown on screen
-                                "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",	// Progress icon shown on screen
+                                "a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_fire_put_down_ca.paa",	// Idle icon shown on screen
+                                "a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_fire_put_down_ca.paa",	// Progress icon shown on screen
                                 "_this distance _target < 5",						// Condition for the action to be shown
                                 "_caller distance _target < 5",						// Condition for the action to progress
                                 {},													// Code executed when action starts
