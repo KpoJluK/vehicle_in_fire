@@ -67,7 +67,7 @@ while {STOP_burning_vehicle_car} do {
                             ] call BIS_fnc_holdActionAdd;
                             _vehicle_select setVariable ["vehicleActionId", _vehicle_action_id, true];
                         }
-                    ] remoteExec ["call", 2]; // MP compatible implementation
+                    ] remoteExec ["call", 0]; // MP compatible implementation
 
                     //find engine
                     _pos_fire_in_vehicle = [0, 1.5, -0.7];
